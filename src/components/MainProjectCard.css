@@ -1,0 +1,69 @@
+.main-project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #D8EEFE 50%, #FFFFFF 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 600px;
+  height: 350px;
+  box-sizing: border-box;
+}
+
+.inf-card {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  gap: 6px;
+  /* padding-left: 3vw; */
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.main-category {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+  margin: 8px 0;
+}
+
+.main-description {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+  margin: 8px 0;
+}
+
+.details-btn {
+  background-color: #2da5f3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  height: 60px;
+  width: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.details-btn:hover {
+  background-color: #1e8ddb;
+}

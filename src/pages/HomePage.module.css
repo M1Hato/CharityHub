@@ -1,0 +1,83 @@
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 100vh;
+  }
+
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 600px;
+  text-align: justify;
+}
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .main-card {
+    display: grid;
+    gap: 24px;
+  }
+    
+  .primary-btn {
+    background-color: #2da5f3;
+    color: white;
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background-color: #1e8ddb;
+  }
+  
+  /* modal */
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

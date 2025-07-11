@@ -1,0 +1,120 @@
+.head {
+  width: 100%;
+}
+
+.projectMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+
+
+.filterPanel {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.searchInput {
+  flex: 1;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-indent: 12px;
+}
+
+.categorySelect {
+  font-size: 16px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-indent: 12px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 0fr));
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.noResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 20px;
+  color: #888;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageButton {
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+  background-color: #eee;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #2da5f3;
+  color: #fff;
+}
+
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}

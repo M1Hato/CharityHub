@@ -1,0 +1,185 @@
+.usercontainer {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Заголовок */
+.huser {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Блок профілю */
+.profileBox {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
+
+/* Абзаци в профілі */
+.profileBox p {
+  font-size: 17px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Жирний текст */
+.profileBox strong {
+  color: #555;
+}
+
+/* Рядок з кнопками */
+.btnRow {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+/* Основна кнопка */
+.primaryBtn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Додаткова кнопка */
+.secondaryBtn {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.secondaryBtn:hover {
+  background-color: #565e64;
+}
+
+/* Повідомлення статусу */
+.statusMsg {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Фон модалки*/
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Вікно модалки */
+.modalBox {
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Заголовок модалки */
+.modalBox h2 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+/* Інпути */
+.modalBox input[type="text"],
+.modalBox input[type="number"],
+.modalBox input[type="date"],
+.modalBox textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  width: 100%;
+}
+
+.modalBox input[type="text"]:focus,
+.modalBox input[type="number"]:focus,
+.modalBox input[type="date"]:focus,
+.modalBox textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* textarea висота */
+.modalBox textarea {
+  min-height: 80px;
+}
+
+/* Кнопки в модалці */
+.modalButtons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modalButtons button {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.modalButtons button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modalButtons button:first-child:hover {
+  background-color: #1e7e34;
+}
+
+.modalButtons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.modalButtons button:last-child:hover {
+  background-color: #b02a37;
+}
